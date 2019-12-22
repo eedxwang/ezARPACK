@@ -1,0 +1,2 @@
+.. doxygennamespace:: ezarpack
+   :members:

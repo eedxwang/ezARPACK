@@ -45,7 +45,9 @@ endif(NOT POLICY CMP0074)
 find_package(Armadillo QUIET CONFIG)
 if(NOT Armadillo_FOUND)
   if(Armadillo_ROOT)
-    find_library(ARMADILLO_LIBRARY NAMES armadillo PATHS ${Armadillo_ROOT}/lib NO_DEFAULT_PATH)
+    find_library(ARMADILLO_LIBRARY NAMES armadillo
+                 PATHS ${Armadillo_ROOT}/lib
+                 NO_DEFAULT_PATH)
   else(Armadillo_ROOT)
     find_library(ARMADILLO_LIBRARY NAMES armadillo)
   endif(Armadillo_ROOT)
